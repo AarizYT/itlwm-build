@@ -62,6 +62,7 @@ jobs:
         echo 'If you discovered an issue and you do not have debugging skills, please check with the [Gitter Chat Room](https://gitter.im/OpenIntelWireless/itlwm) in advance before opening an Issue.' >> ReleaseNotes.md
         echo '### The latest five updates are:' >> ReleaseNotes.md
         git log -"5" --format="- %H %s" | sed '/^$/d' >> ReleaseNotes.md
+        echo 'Built by Aariz' >> ReleaseNotes.md
 
     - name: Delete Old Prerelease
       uses: dev-drprasad/delete-tag-and-release@v0.2.1
